@@ -16,13 +16,13 @@
  */
 
 /** 1 — Curso "A.T. na Prática" (sábado, 28/11/2026) — R$ 147,00 */
-export const HOTMART_CHECKOUT_URL_1 = 'COLE_AQUI_O_LINK_1_AT_NA_PRATICA'
+export const HOTMART_CHECKOUT_URL_1 = 'https://pay.hotmart.com/G108160022N'
 
 /** 2 — Curso "Estudo de Caso — Manejo de Crise" (domingo, 29/11/2026) — R$ 156,60 */
-export const HOTMART_CHECKOUT_URL_2 = 'COLE_AQUI_O_LINK_2_MANEJO_DE_CRISE'
+export const HOTMART_CHECKOUT_URL_2 = 'https://pay.hotmart.com/G108160022N'
 
 /** 3 — Combo "Weekend Pass" (os dois cursos) — R$ 217,00 */
-export const HOTMART_CHECKOUT_URL_3 = 'COLE_AQUI_O_LINK_3_COMBO_WEEKEND_PASS'
+export const HOTMART_CHECKOUT_URL_3 = 'https://pay.hotmart.com/C108160075W'
 
 export type CheckoutKey = 'at' | 'crise' | 'combo'
 
