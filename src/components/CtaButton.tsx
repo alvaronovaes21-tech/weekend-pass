@@ -1,5 +1,5 @@
 import type { MouseEvent, ReactNode } from 'react'
-import { getCheckoutUrl, getCheckoutVariableName, type CheckoutKey } from '../config/checkout'
+import { getCheckoutUrl, getCheckoutVariableName, type CheckoutKey } from '../config/links'
 import { trackCheckoutClick } from '../lib/analytics'
 import { notify } from '../lib/notify'
 import { Icon } from './Icon'
@@ -19,7 +19,7 @@ interface CtaButtonProps {
 
 /**
  * Único botão de compra do site. Todos os CTAs passam por aqui, então:
- *  - o link vem sempre de src/config/checkout.ts;
+ *  - o link vem sempre de src/config/links.ts;
  *  - abre o checkout real da Hotmart em nova aba;
  *  - se o link não estiver configurado, NADA é simulado: mostra um aviso claro.
  */
@@ -65,10 +65,10 @@ export function CtaButton({
   const handleMissing = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
     const variable = getCheckoutVariableName(checkout)
-    console.warn(`[Hotmart] Link de checkout não configurado: ${variable}. Edite src/config/checkout.ts.`)
+    console.warn(`[Hotmart] Link de checkout não configurado: ${variable}. Edite src/config/links.ts.`)
     notify.show(
       import.meta.env.DEV
-        ? `Link de checkout não configurado. Defina ${variable} em src/config/checkout.ts (ou no arquivo .env).`
+        ? `Link de checkout não configurado. Defina ${variable} em src/config/links.ts (ou no arquivo .env).`
         : 'As inscrições ainda não estão disponíveis por aqui. Tente novamente em instantes.',
     )
   }

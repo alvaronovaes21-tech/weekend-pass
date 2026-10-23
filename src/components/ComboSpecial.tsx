@@ -1,4 +1,5 @@
 import { journey } from '../data/content'
+import { CtaButton } from './CtaButton'
 import { Icon } from './Icon'
 import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
@@ -43,6 +44,12 @@ export function ComboSpecial() {
             </li>
           ))}
         </ol>
+
+        <div className="section-cta">
+          <CtaButton checkout="combo" location="beneficios" size="lg">
+            QUERO PARTICIPAR DOS DOIS ENCONTROS
+          </CtaButton>
+        </div>
 
         <p className="note note--center">
           <Icon name="info" size={18} />

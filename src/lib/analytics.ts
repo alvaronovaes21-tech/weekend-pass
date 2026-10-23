@@ -1,5 +1,5 @@
 import { GA_MEASUREMENT_ID, META_PIXEL_ID } from '../config/analytics'
-import type { CheckoutKey } from '../config/checkout'
+import type { CheckoutKey } from '../config/links'
 
 type AnyFn = (...args: unknown[]) => void
 

@@ -12,6 +12,7 @@ import { Instructor } from './components/Instructor'
 import { Offer } from './components/Offer'
 import { Schedule } from './components/Schedule'
 import { Toast } from './components/Toast'
+import { VideoSection } from './components/VideoSection'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Header />
       <main id="conteudo-principal">
         <Hero />
+        <VideoSection />
         <Identification />
         <Courses />
         <ComboSpecial />

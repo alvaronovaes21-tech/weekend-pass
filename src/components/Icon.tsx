@@ -20,6 +20,7 @@ const paths = {
     </>
   ),
   check: <path d="m5 12.5 4.5 4.5L19 7" />,
+  play: <path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" />,
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
   close: <path d="M6 6l12 12M18 6 6 18" />,

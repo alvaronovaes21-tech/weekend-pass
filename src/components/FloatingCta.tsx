@@ -4,7 +4,7 @@ import { CtaButton } from './CtaButton'
 
 /**
  * Barra de compra fixa, somente no mobile (via CSS). Aparece depois que o botão do hero sai da tela
- * e some quando a oferta ou o CTA final já estão visíveis, para não duplicar nem cobrir conteúdo.
+ * e some quando um CTA grande (abaixo do vídeo, oferta ou CTA final) já está visível, para não duplicar nem cobrir conteúdo.
  */
 export function FloatingCta() {
   const [heroGone, setHeroGone] = useState(false)
@@ -24,7 +24,7 @@ export function FloatingCta() {
       entries.forEach((e) => (e.isIntersecting ? visibleIds.add(e.target.id) : visibleIds.delete(e.target.id)))
       setCtaSectionVisible(visibleIds.size > 0)
     })
-    ;['oferta', 'inscricao'].forEach((id) => {
+    ;['video-cta', 'oferta', 'inscricao'].forEach((id) => {
       const el = document.getElementById(id)
       if (el) sectionObserver.observe(el)
     })

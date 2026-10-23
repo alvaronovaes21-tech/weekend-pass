@@ -1,4 +1,4 @@
-import type { CheckoutKey } from '../config/checkout'
+import type { CheckoutKey } from '../config/links'
 import { CtaButton } from './CtaButton'
 import { Icon } from './Icon'
 
