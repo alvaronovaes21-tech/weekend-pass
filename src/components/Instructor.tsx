@@ -16,8 +16,8 @@ export function Instructor() {
                 alt={`${offer.instructor}, ${offer.instructorRole.toLowerCase()}`}
                 loading="lazy"
                 decoding="async"
-                width={640}
-                height={800}
+                width={768}
+                height={1024}
               />
             ) : (
               <div className="instructor__placeholder" role="img" aria-label={`Identidade visual de ${offer.instructor}`}>
